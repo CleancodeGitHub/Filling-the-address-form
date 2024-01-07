@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Auto Form Submission</title>
+  <script src="validation.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="form__header">
+      <h2 class="form__title">Form</h2>
+    </header>
+    <form action="#" class="form" onsubmit="return validateForm()">
+
+      <!-- Your form content here -->
+      </h2>
+      </header>
+      <form action="#" class="form">
+
+        <div class="form__section">
+          <fieldset class="form__fieldset form__fieldset_shadow">
+
+            <legend class="form__legend">
+              User Info
+            </legend>
+
+            <div class="form__group">
+              <label for="form-username" class="form__label">
+                User Name
+              </label>
+              <input type="text" class="form__field form__field_shadow_inset" id="form-username"
+                autocomplete="username">
+            </div>
+
+            <div class="form__group">
+              <label for="form-password" class="form__label">
+                Password
+              </label>
+              <input type="password" class="form__field form__field_shadow_inset" id="form-password"
+                autocomplete="new-password">
+            </div>
+
+            <div class="form__group">
+              <label for="form-password-check" class="form__label">
+                Retype Password
+              </label>
+              <input type="password" class="form__field form__field_shadow_inset" id="form-password-check">
+            </div>
+
+          </fieldset>
+
+
+        </div>
+
+        <div class="form__section">
+          <fieldset class="form__fieldset form__fieldset_shadow">
+
+            <legend class="form__legend">
+              Contact Info
+            </legend>
+
+            <div class="form__group">
+              <label for="form-first-name" class="form__label">
+                First Name
+              </label>
+              <input type="text" name="first-name" class="form__field form__field_shadow_inset" id="form-first-name"
+                autocomplete="given-name">
+            </div>
+
+            <div class="form__group">
+              <label for="form-last-name" class="form__label">
+                Last Name
+              </label>
+              <input type="text" name="last-name" class="form__field form__field_shadow_inset" id="form-last-name"
+                autocomplete="family-name">
+            </div>
+
+            <div class="form__group">
+              <label for="form-email" class="form__label">
+                Email
+              </label>
+              <input type="email" name="email" class="form__field form__field_shadow_inset" id="form-email"
+                autocomplete="email">
+            </div>
+
+            <div class="form__group">
+              <label for="form-phone" class="form__label">
+                Phone Number
+              </label>
+              <input type="tel" name="phone" class="form__field form__field_shadow_inset" id="form-phone"
+                autocomplete="tel">
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form__section">
+          <fieldset class="form__fieldset form__fieldset_shadow">
+
+            <legend class="form__legend">
+              Home Address
+            </legend>
+
+            <div class="form__group">
+              <label for="form-address" class="form__label">
+                Street Address
+              </label>
+              <input type="text" name="address" class="form__field form__field_shadow_inset" id="form-address"
+                autocomplete="street-address">
+            </div>
+
+            <div class="form__group">
+              <label for="form-apt-number" class="form__label form__label_type_optional">
+                Apt., Suite, Unit
+              </label>
+              <input type="text" name="apt-number" class="form__field form__field_shadow_inset" id="form-apt-number">
+            </div>
+
+            <div class="form__group">
+              <label for="form-city" class="form__label">
+                City
+              </label>
+              <input type="text" name="city" class="form__field form__field_shadow_inset" id="form-city"
+                autocomplete="address-level2">
+            </div>
+
+            <div class="form__group">
+              <label for="form-state" class="form__label">
+                State
+              </label>
+              <input type="text" name="state" class="form__field form__field_shadow_inset" id="form-state"
+                autocomplete="address-level1">
+            </div>
+
+            <div class="form__group">
+              <label for="form-postal-code" class="form__label">
+                Postal Code
+              </label>
+              <input type="text" name="postal-code" class="form__field form__field_shadow_inset" id="form-postal-code"
+                autocomplete="postal-code">
+            </div>
+
+            <div class="form__group">
+              <label for="form-country" class="form__label">
+                Country
+              </label>
+              <input type="text" name="country" class="form__field form__field_shadow_inset" id="form-country"
+                autocomplete="country">
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form__section">
+          <fieldset class="form__fieldset form__fieldset_shadow">
+            <legend class="form__legend">Contact</legend>
+
+            <div class="form__group">
+              <label for="form-contact-email" class="form__label">
+                Email
+              </label>
+              <input type="email" name="contact-email" class="form__field form__field_shadow_inset"
+                id="form-contact-email" autocomplete="email">
+            </div>
+
+            <div class="form__group">
+              <label for="form-contact-subject" class="form__label">
+                Subject
+              </label>
+              <input type="text" name="subject" class="form__field form__field_shadow_inset" id="form-contact-subject">
+            </div>
+
+            <div class="form__group">
+              <label for="form-contact-message" class="form__label">
+                Message
+              </label>
+              <textarea name="message" class="form__field form__field_shadow_inset"
+                id="form-contact-message"></textarea>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form__section">
+
+          <fieldset class="form__fieldset form__fieldset_shadow">
+
+            <legend class="form__legend">
+              Personal Info
+            </legend>
+
+            <div class="form__group">
+              <label for="form-full-name" class="form__label">Full Name</label>
+              <input type="text" name="full-name" id="form-full-name" class="form__field form__field_shadow_inset"
+                autocomplete="name">
+            </div>
+
+            <p class="form__label form__label_type_radio">Sex</p>
+            <div class="form__group form__group_inline">
+
+              <input type="radio" name="gender" value="male" class="form__radio" id="male">
+              <label for="male" class="form__radio-label">Male</label>
+
+              <input type="radio" name="gender" value="female" class="form__radio" id="female">
+              <label for="female" class="form__radio-label">Female</label>
+
+            </div>
+
+            <p class="form__label form__label_type_checkbox">Favorite Places</p>
+            <div class="form__group form__group_inline">
+
+              <input type="checkbox" value="san-diego" name="favorite-places" class="form__checkbox" id="san-diego">
+              <label for="san-diego" class="form__checkbox-label">San Diego</label>
+
+              <input type="checkbox" value="portland" name="favorite-places" class="form__checkbox" id="portland">
+              <label for="portland" class="form__checkbox-label">Portland</label>
+
+              <input type="checkbox" value="las-vegas" name="favorite-places" class="form__checkbox" id="las-vegas">
+              <label for="las-vegas" class="form__checkbox-label">Las Vegas</label>
+
+            </div>
+
+            <div class="form__group">
+              <label for="car" class="form__label">Select Your Favorite Car Manufacturer</label>
+
+              <select name="car" id="car" class="form__select form__field_shadow_inset">
+                <option value="tesla">Tesla</option>
+                <option value="ford">Ford</option>
+                <option value="toyota">Toyota</option>
+                <option value="Subaru">Subaru</option>
+              </select>
+            </div>
+
+
+          </fieldset>
+        </div>
+
+
+        <div class="form__button-group">
+
+          <button class="button button_shadow button_primary">
+            Submit
+          </button>
+
+        </div>
+
+      </form>
+  </div>
+
+
+</body>
+
+</html>
